@@ -14,11 +14,15 @@ include_once(ABSPATH . 'wp-admin/includes/plugin.php');
 include_once(ABSPATH . 'wp-admin/includes/file.php');
 include_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
 include_once(ABSPATH . 'wp-admin/includes/misc.php');
+include_once(plugin_dir_path(__FILE__) . 'updater.php');
 
 // If this file is called directly, abort.
 if ( ! defined('WPINC')) {
     die;
 }
+
+$updater = new Updater(__FILE__);
+$updater->initialize();
 
 add_action('rest_api_init', function () {
     register_rest_route('branch-helper/v1', '/check-connection', [
