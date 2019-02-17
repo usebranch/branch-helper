@@ -1,0 +1,7 @@
+/composer.json export-ignore
+/composer.lock export-ignore
+/Dockerfile export-ignore
+/docker-compose.yml export-ignore
+/phpunit.xml export-ignore
+/README.md export-ignore
+/tests export-ignore
