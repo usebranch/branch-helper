@@ -144,7 +144,7 @@ function addUpgraderSourceSelectionFilter($slug) {
     }, 10, 3);
 }
 
-add_filter('http_request_args', function($args, $url) use ($pusher)
+add_filter('http_request_args', function($args, $url)
 {
     if (0 !== strpos($url, 'https://api.wordpress.org/plugins/update-check')) {
         return $args;
@@ -165,7 +165,7 @@ add_filter('http_request_args', function($args, $url) use ($pusher)
     return $args;
 }, 5, 2);
 
-add_filter('http_request_args', function($args, $url) use ($pusher)
+add_filter('http_request_args', function($args, $url)
 {
     if (0 !== strpos($url, 'https://api.wordpress.org/themes/update-check')) {
         return $args;
