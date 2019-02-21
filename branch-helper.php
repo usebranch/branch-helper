@@ -4,7 +4,7 @@
  * Plugin Name: Branch Helper
  * Plugin URI: https://usebranch.co
  * Description: Client plugin for Branch
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: Branch
  * Author URI: https://usebranch.co
  * License: GNU GENERAL PUBLIC LICENSE
